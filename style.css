@@ -22,12 +22,12 @@ body {
 }
 
 .error {
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin-left: 60px;
     color: red;
     display: none;
 }
-.body p {
+.name,
+.ul-list {
     text-align: center;
     padding: 15px;
 }
@@ -60,6 +60,7 @@ ul {
     margin-top: 15px;
     border-radius: 5px;
 }
+
 li {
     list-style: none;
     display: flex;
@@ -69,7 +70,17 @@ li {
     margin: 5px;
     background-color: rgb(246, 243, 197);
 }
-
+.btns {
+    display: flex;
+    gap: 5px;
+}
+.edit,.complete,.delete {
+    background-color: transparent;
+    transition: all 0.3s ease 0s
+}
+.edit:hover,.complete:hover,.delete:hover {
+    background-color: rgb(169, 167, 167);
+}
 .popup {
     display: flex;
     flex-direction: column;
@@ -79,6 +90,9 @@ li {
     padding: 5px;
     border: 1px solid black;
     display: none;
+}
+.popup-open {
+    display: flex;
 }
 .popup p {
     margin-bottom: 5px;
